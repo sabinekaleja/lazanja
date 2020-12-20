@@ -1,0 +1,257 @@
+body{
+    margin:0;
+    font-family: "Helvetica Neue";
+    width: 100%;
+    height: 100%;
+}
+h3{
+    font-size: 25px;
+    font-family: "Helvetica Neue";
+    color: #CB6D1D;
+    margin-bottom: 10px;
+}
+h4{
+    font-size: 21px;
+    color: #CB6D1D;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+p{
+    color: #3C3A39;
+    font-size: 16px;
+    margin-top: 10px;
+}
+li{
+    color: #3C3A39;
+    list-style-type: none;
+    font-size: 16px;
+}
+.headContainer{
+    position: relative;
+    text-align: center;
+    background-image: url(img/galvenes-foto.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50% 20%;
+    width: 100%;
+    min-height: 213px;
+    max-height: 213px;
+}
+.galvenesFons{
+    background-color: black;
+    opacity: 50%;
+    width: 100%;
+    min-height: 213px;
+    max-height: 213px;
+}
+.centretsTeksts{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: "Helvetica Neue";
+    font-size: 55px;
+    color: white;
+}
+.topNav{
+    background-color: #cececd7c;
+    overflow: hidden;
+}
+.topNav a{
+    float: left;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 20px;
+    font-family: "Helvetica Neue";
+    color: #CB6D1D;
+    margin-left: 20px;
+}
+.topNav a:hover{
+    background-color: #CB6D1D;
+    color: #fff;
+}
+.topNav a.active{
+    background-color: #CB6D1D;
+    color: #fff;
+}
+.row{
+    height: auto;
+}
+.row::after{
+    content: "";
+    display: table;
+    clear: both;
+}
+.kreisaisTeksts{
+    float: left;
+    margin-top: 20px;
+    width: 55%;
+    min-width: 435px;
+    height: 100%;
+    padding-left: 35px;
+    padding-right: 15px;
+    display: block;
+
+}
+.kreisaisTeksts p{
+    text-align: justify;
+}
+.pirmaisHeading{
+    padding-top: 0;
+    margin-top: 0;
+}
+.labaisTeksts{
+    float: left;
+    margin-top: 20px;
+    height: 500px;
+    padding-left: 15px;
+    width: 40%;
+    display: block;
+}
+.redaktorsFoto img{
+    min-width: 100px;
+    max-width: 150px;
+    width: 50%;
+    float: left;
+}
+.redaktorsTeksts{
+    float: left;
+    margin-left: 15px;
+    margin-right: 15px;
+    width: 70%;
+}
+.redaktorsTeksts p{
+    margin-top: 0;
+    text-align: justify;
+}
+.tekstsVideo{
+    text-align: center;
+    display: block;
+    height: max-content;
+}
+.tekstsVideo h3{
+    padding-bottom: 10px;
+}
+.tekstsVideo p{
+    margin-top: 0;
+    margin-bottom: 0;
+}
+.video{
+    margin: 15px;
+    text-align: center;
+}
+.nepieciesamais{
+    list-style: none;
+    color: #3C3A39;
+    padding-bottom: 5px;
+}
+.nepieciesamais li::before{
+    content: "\2022";
+    color: #CB6D1D;
+    font-size: 20px;
+    font-weight: bolder;
+    display: inline-block;
+    width: 1em;
+    margin-left: -1em;
+}
+.nepieciesamais strong{
+    color: #CB6D1D;
+}
+
+.instrukcija{
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+.instrukcija ul li{
+    list-style: none;
+    counter-increment: list;
+    position: relative;
+}
+.instrukcija li::before{
+    content: counter(li) ".";
+    color: #CB6D1D;
+    display: inline-block;
+    width: 26px;
+    left: -32px;
+}
+.instrukcija li{
+    counter-increment: li;
+    padding-bottom: 5px;
+}
+.instrukcijaKartas ul li{
+    list-style: none;
+    counter-increment: list;
+    position: relative;
+}
+.instrukcijaKartas li::before{
+    content: counter(li) ". kārta";
+    color: #CB6D1D;
+    display: inline-block;
+    width: 80px;
+    left: -70px;
+}
+.instrukcijaKartas li{
+    counter-increment: li;
+    padding-bottom: 5px;
+}
+.receptesApaksa{
+    text-align: center;
+}
+.receptesApaksa p{
+    color: #CB6D1D;
+    font-size: 21px;
+    font-weight: bold;
+    font-style: italic;
+}
+.kontaktuBloks{
+    margin: auto;
+    margin-top: 20px;
+    display: block;
+    width: 100%;
+    text-align: center;
+}
+.kontaktuSadala{
+    display: inline-block;
+    width: 20%;
+    margin-bottom: 16px;
+    padding: 0 8px;
+    text-align: left;
+  }
+  .card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  }
+  .kontaktuKonteineris {
+    padding: 0 16px;
+  }
+  .kontaktuKonteineris h2 {
+      color: #CB6D1DF;
+
+  }
+   .kontaktuKonteineris::after, .kontaktuLinija::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+  .title {
+    color:#CB6D1D;
+  }
+  .button {
+    border: none;
+    outline: 0;
+    display: inline-block;
+    padding: 8px;
+    color: white;
+    background-color: #5c5c5a;
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+  }
+  
+  .button:hover {
+    background-color: #CB6D1D;
+  }
+  
+  #wrapper {
+  height: 1000px;
+	}
